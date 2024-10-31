@@ -1,0 +1,20 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class CalculatorTest {
+
+    @Test
+    public void testAddition() {
+        String expression = "3 + 5";
+        String result = Calculator.Run(expression);
+        assertEquals("8.0", result);
+    }
+
+    @Test
+    public void testSubtraction() {
+        String expression = "10 - 4";
+        String result = Calculator.Run(expression);
+        assertEquals("6.0", result);
+    }
+
+}
